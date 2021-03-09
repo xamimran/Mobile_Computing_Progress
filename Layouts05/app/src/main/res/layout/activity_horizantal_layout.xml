@@ -71,7 +71,10 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        app:layout_goneMarginLeft="10dp"
+        app:layout_goneMarginRight="10dp"
+        >
 
         <Button
             android:id="@+id/button4"
@@ -79,6 +82,7 @@
             android:layout_height="71dp"
             android:onClick="moveToActivity1"
             android:text="Button"
+
             android:layout_marginLeft="5dp"
             android:layout_marginRight="5dp"
             />
