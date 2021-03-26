@@ -22,7 +22,7 @@ public class Seekbar extends AppCompatActivity {
         seekBar.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
             @Override
             public void onProgressChanged(SeekBar seekBar, int index, boolean fromUser) {
-                int tableNumber=index;
+                int tableNum=index;
                 ArrayList<String> list=new ArrayList<String>();
                 for(int x=1;x<11;x++){
                     list.add(Integer.toString(x*index));
