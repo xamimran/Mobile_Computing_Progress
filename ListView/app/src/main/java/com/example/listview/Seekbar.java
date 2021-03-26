@@ -16,7 +16,7 @@ public class Seekbar extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_seekbar);
         SeekBar seekBar=findViewById(R.id.seekBar);
-        seekBar.setMax(40);
+        seekBar.setMax(50);
         ListView listView=findViewById(R.id.listView);
 
         seekBar.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
