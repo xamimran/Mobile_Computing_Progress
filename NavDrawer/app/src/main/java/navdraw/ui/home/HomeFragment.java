@@ -1,4 +1,4 @@
-package com.usamaaziz01.a08_navdrawer.ui.home;
+package navdraw.ui.home;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;

@@ -1,4 +1,4 @@
-package com.usamaaziz01.a08_navdrawer.ui.slideshow;
+package navdraw.ui.slideshow;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
