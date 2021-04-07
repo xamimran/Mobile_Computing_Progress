@@ -6,56 +6,69 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="#FFFFFF"
-        android:orientation="vertical"
-        app:layout_constraintBottom_toBottomOf="parent"
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="384dp"
+        android:text="COUNTER APP"
+        android:textColor="#1E6FE9"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/counter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:text="0"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toStartOf="@+id/increment"
+        app:layout_constraintHorizontal_bias="0.398"
+        app:layout_constraintStart_toEndOf="@+id/decrement"
+        tools:layout_editor_absoluteY="129dp" />
+
+    <Button
+        android:id="@+id/decrement"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:background="#E91E63"
+        android:onClick="subtract"
+        android:padding="0px"
+        android:text="-"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/changeActivity"
+        app:layout_constraintHorizontal_bias="0.413"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="129dp" />
+
+    <Button
+        android:id="@+id/increment"
+        android:layout_width="88dp"
+        android:layout_height="0dp"
+        android:background="#4CAF50"
+        android:onClick="add"
+        android:padding="0px"
+        android:text="+"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/changeActivity"
+        tools:layout_editor_absoluteY="137dp" />
+
+    <Button
+        android:id="@+id/changeActivity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:onClick="moveToActivity2"
+        android:text="Other Activity"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-
-        <TextView
-            android:id="@+id/counter"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="#FFEB3B"
-            android:text="Counter"
-            android:textColor="#FFFFFF"
-            android:textSize="80sp" />
-
-        <TextView
-            android:id="@+id/count"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="#FFEB3B"
-            android:text="0"
-            android:textColor="#FFFFFF"
-            android:textSize="100sp" />
-
-        <Button
-            android:id="@+id/incrementButton"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Click"
-            android:textSize="30sp"
-            android:onClick="increaseCount"/>
-
-        <Button
-            android:id="@+id/activity2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Activity 2"
-            android:textSize="30sp"
-            android:onClick="moveToActivity2"/>
-
-        <Button
-            android:id="@+id/activity3"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Activity 3"
-            android:textSize="30sp"
-            android:onClick="moveToActivity3"/>
-    </LinearLayout>
+        app:layout_constraintTop_toBottomOf="@+id/increment" />
 </androidx.constraintlayout.widget.ConstraintLayout>
