@@ -9,33 +9,33 @@ import android.view.View;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
-    int counter = 0;
+    int count = 0;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         if(savedInstanceState!=null){
-            counter=savedInstanceState.getInt("value");
+            count=savedInstanceState.getInt("value");
             TextView textView = findViewById(R.id.counter);
-            textView.setText(String.valueOf(counter));
+            textView.setText(String.valueOf(count));
         }
     }
     @Override
     protected void onSaveInstanceState(@NonNull Bundle outState) {
         super.onSaveInstanceState(outState);
-        outState.putInt("counter",counter);
+        outState.putInt("counter",count);
     }
 
     public void subtract(View view) {
         TextView textView = findViewById(R.id.counter);
-        counter = Integer.parseInt(textView.getText().toString())-1;
-        textView.setText(String.valueOf(counter));
+        count = Integer.parseInt(textView.getText().toString())-1;
+        textView.setText(String.valueOf(count));
     }
 
     public void add(View view) {
         TextView textView = findViewById(R.id.counter);
-        counter = Integer.parseInt(textView.getText().toString())+1;
-        textView.setText(String.valueOf(counter));
+        count = Integer.parseInt(textView.getText().toString())+1;
+        textView.setText(String.valueOf(count));
     }
     public void moveToActivity2(View view) {
         Intent intent=new Intent(this,MainActivity2.class);
