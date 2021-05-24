@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">11-FragmentsAndNotifications</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="channel_name">Hello blank fragment</string>
+</resources>
